@@ -1,0 +1,107 @@
+.Cardstack_wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cardstack_wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cardstack_card_container {
+    touch-action: none;
+    position: relative;
+    width: 300px;
+    height: 450px;
+    max-width: calc(100vw - 32px);
+    z-index: 999;
+}
+
+.Card_wrapper {
+    position: absolute;
+    width: 300 px;
+    max-width: calc(100vw - 32px);
+    height: 450px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 0 5px #fff, 0 5px 10px rgb(0 0 0 / 5%), 0 7px 30px rgb(0 0 0/5%);
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+}
+
+.Card_container {
+    display: flex;
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    background-size: cover!important;
+}
+
+.Card_body {
+    width: 100%;
+    padding: 0 48px 48px;
+    margin: auto 0 0;
+}
+
+.Card_link {
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.Card_link > h3:first-child {
+    margin-right: 5px;
+}
+
+.Card_link > h3 {
+    margin: 5px 0 0;
+}
+
+.Card_link > h3:last-child {
+    transition: .3s;
+}
+
+.SwipeTip_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.SwipeTip_hand {
+    width: 100%;
+    font-size: 50px;
+    height: 100px;
+    /* margin-bottom: 40px; */
+}
+
+.SwipeTip_text {
+    font-size: calc(.1vw + 1rem);
+    margin-top: 0;
+    transform: translateY(-20px);
+    color: gray;
+}
+
+.CardTechStack_Icon {
+    width: 52px;
+    height: 40px;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.CardTechStack_container {
+    display: flex;
+    flex-direction: column;
+}
