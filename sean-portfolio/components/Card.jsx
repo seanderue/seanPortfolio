@@ -21,6 +21,7 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
         return factorial * INTERMEDIATE_MS_DELAY
     }
     
+    const [animatedClass, setAnimatedClass] = useState(false) 
 
     // Logic that decides where to place the card
     const handleXDrag = (swipe, mx, down) => {
@@ -79,6 +80,16 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
         }        
     }))
     
+    const techSpring = useSpring(() => ({
+        from: {
+            y: 0,
+            scale: 1
+        },
+        to: {
+            y: 15,
+            scale: 1.5
+        }
+    }))
     
     
     const bind = useGesture({
@@ -91,11 +102,13 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
                 rotate: mx / 100,
             })
             updateGoneArray(swipe[0])
+            setAnimatedClass(true)
         },
         onDragEnd: ({swipe, down, movement: [mx]}) => 
         {
             handleSwipeEnd(swipe, down, mx)
             checkForReset()
+            setAnimatedClass(false)
         }
     },
     {   
@@ -110,7 +123,7 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
         }
     }       
     )
-    
+
     //May need to eventually change the config on the opacity and make it only affect X
     useEffect(() => {
         
@@ -135,22 +148,24 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
             }
         }, [needsReset])
         
+        const AnimatedCardTechStack = animated(CardTechStack)
+
         return (
             <animated.div 
             className={styles.Card_wrapper}
             {...bind()} 
-                style={{x, scale, rotate, opacity}}
-                >
+            style={{x, scale, rotate, opacity}}
+            >
+            <CardTechStack techStack={techStack} animated={animatedClass}/>
                 <div className={styles.Card_container}
                     style={{backgroundImage:`url(${background})`}}>
-                    <CardTechStack techStack={techStack}/>
                     <div className={styles.Card_body}>
                         <h2>{title}</h2>
                         <p>{description}</p>
                         <Link
                             href={{
-                            pathname: '/[project]',
-                            query: { project: 'katie-order-form'}
+                                pathname: '/[project]',
+                                query: { project: 'katie-order-form'}
                             }}>
                             <a className={styles.Card_link}>
                                 <h3> Explore </h3>

@@ -3,6 +3,7 @@ import styles from '../styles/Cards.module.css'
 
 import Card from './Card.jsx'
 import CardSwipe from './Card'
+import CardTechStack from './CardTechStack'
 import { useSpring, animated } from "react-spring"
 import { useDrag, useGesture } from 'react-use-gesture'
 
@@ -15,27 +16,10 @@ export default function Deck() {
     const cards = 
     [
         {
-            title: 'Bakery Order Form',
-            description: 'A lovely order form for a lovely lass',
-            background: '/images/cake-thumbnail.jpeg',
-            techStack: [{
-                name: 'React',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
-            },
-            {
-                name: 'Three.js',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg'
-            },
-            {
-                name: 'Firebase',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
-            }    
-        ]
-        },
-        {
             title: 'Multiplayer Dice Game',
             description: 'A fun game to play with your buddies',
             background: 'https://via.placeholder.com/500',
+            textColor: 'white',
             techStack: [{
                 name: 'React',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -54,6 +38,26 @@ export default function Deck() {
             title: 'Slippychenko',
             description: 'Did nothing. Fake Card',
             background: 'undefined',
+            textColor: 'black',
+            techStack: [{
+                name: 'React',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+            },
+            {
+                name: 'Three.js',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg'
+            },
+            {
+                name: 'Firebase',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
+            }    
+        ]
+        },
+        {
+            title: 'Bakery Order Form',
+            description: 'A lovely order form for a lovely lass',
+            background: '/images/cardBG.jpg',
+            textColor: 'white',
             techStack: [{
                 name: 'React',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -109,8 +113,8 @@ export default function Deck() {
         
     return (
         <div className={styles.Cardstack_wrapper}>
-                {goneArray}
             <div  className={styles.Cardstack_card_container}>
+                {/* <CardTechStack techStack={cards[0].techStack}/> */}
                 {cardElements}
             </div>
         </div>

@@ -1,10 +1,11 @@
 .Cardstack_wrapper {
+    --card-top-position: 35%;
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .Cardstack_wrapper {
@@ -26,16 +27,19 @@
 }
 
 .Card_wrapper {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    width: 300 px;
+    top: var(--card-top-position);
+    width: 300px;
     max-width: calc(100vw - 32px);
     height: 450px;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 0 0 5px #fff, 0 5px 10px rgb(0 0 0 / 5%), 0 7px 30px rgb(0 0 0/5%);
-    overflow: hidden;
     cursor: grab;
     user-select: none;
+    /* overflow: hidden; */
 }
 
 .Card_container {
@@ -43,13 +47,23 @@
     width: 100%;
     min-width: 300px;
     height: 100%;
+    border-radius: 16px;
     background-size: cover!important;
+    justify-content: center;
 }
 
 .Card_body {
     width: 100%;
     padding: 0 48px 48px;
     margin: auto 0 0;
+    color:#2a363b;
+}
+
+.Card_body > h2 {
+    color: #2a363b;
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 .Card_link {
@@ -73,6 +87,8 @@
 }
 
 .SwipeTip_container {
+    top:calc(var(--card-top-position)+200px);
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,14 +110,42 @@
 }
 
 .CardTechStack_Icon {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 0px;
     width: 52px;
     height: 40px;
     user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
+    opacity: 0;
 }
 
 .CardTechStack_container {
+    position: absolute;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 10px;
+    /* background-color: rgb(255, 255, 255); */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.CardTechStack_container.animated {
+    /* background-color: aquamarine; */
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1.2) translate(0px, -70px);
+    z-index: 1000;
+}
+
+.CardTechStack_Icon.animated {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 15px;
+    opacity: 1;
+}
+
+.Card_wrapper:hover > .CardTechStack_container {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* background-color: aquamarine; */
 }
