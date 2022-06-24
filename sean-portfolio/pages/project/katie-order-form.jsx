@@ -34,7 +34,7 @@ export default function katieOrderFormPage() {
             <h1>Bakery Order Form</h1>
             <TechStack
               techStack={techStack}/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor ac felis nec 
+            <p>pushing to domain, consectetur adipiscing elit. Sed tempor ac felis nec 
               laoreet. Suspendisse ornare cursus nunc at ultricies. Cras tincidunt mauris ac ante </p>
               <h4>Goal</h4>
               <p>viverra malesuada. Pellentesque sit amet volutpat ex, vel accumsan nisi. Nunc finibus vestibulum dapibus. Donec tempus, ex eget varius turpis. Aenean pretium mattis orci, et tincidunt turpis mollis quis. </p>
