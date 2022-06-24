@@ -18,8 +18,8 @@ export default function Deck() {
         {
             title: 'Multiplayer Dice Game',
             description: 'A fun game to play with your buddies',
-            background: 'https://via.placeholder.com/500',
-            textColor: 'white',
+            background: '/images/cardBG-dice.jpg',
+            textColor: '#FFF',
             link: 'tenzies',
             techStack: [{
                 name: 'React',
@@ -39,7 +39,7 @@ export default function Deck() {
             title: 'Slippychenko',
             description: 'Did nothing. Fake Card',
             background: 'undefined',
-            textColor: 'black',
+            textColor: '#2a363b',
             link: '',
             techStack: [{
                 name: 'React',
@@ -58,8 +58,8 @@ export default function Deck() {
         {
             title: 'Bakery Order Form',
             description: 'A lovely order form for a lovely lass',
-            background: '/images/cardBG.jpg',
-            textColor: 'white',
+            background: '/images/cardBG-bakery.jpg',
+            textColor: '#2a363b',
             link: 'katie-order-form',
             techStack: [{
                 name: 'React',
@@ -104,6 +104,7 @@ export default function Deck() {
                 title={card.title}
                 description={card.description}
                 background={card.background}
+                textColor={card.textColor}
                 link = {card.link}
                 techStack = {card.techStack}
                 setGoneArray={setGoneArray}

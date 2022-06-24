@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Deck.jsx", "components/Card.jsx", "components/Card.jsx"  ],
+, "components/Deck.jsx", "components/Card.jsx", "components/Card.jsx", "pages/[project]/katie-order-form.jsx"  ],
   "exclude": [
     "node_modules"
   ]

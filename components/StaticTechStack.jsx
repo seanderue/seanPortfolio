@@ -8,8 +8,12 @@ export default function TechStack({techStack}) {
     const CardTechStack_Container_Class = styles.TechStack_container
 
     const techStackElements = techStack.map((item)=> {
-        return (<img className={CardTechStack_Icon_Class} src={item.imgSrc} key={item.name}/>)}
-    )
+        return (
+        <div className={styles.TechStack_icon_label_container}>
+            <img className={CardTechStack_Icon_Class} src={item.imgSrc} key={item.name}/>
+            <p className={styles.TechStack_label}>{item.name}</p>
+        </div>
+    )})
 
     return (
         <div className ={CardTechStack_Container_Class}>

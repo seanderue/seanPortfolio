@@ -60,10 +60,9 @@
 }
 
 .Card_body > h2 {
-    color: #2a363b;
     font-size: 30px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
 }
 
 .Card_link {

@@ -6,7 +6,7 @@ import { useGesture } from 'react-use-gesture'
 import { useSpring, animated } from "react-spring"
 import { useEffect, useState } from "react"
 
-export default function Card ({title, description, setGoneArray, goneArray, index, needsReset, setNeedsReset, checkForReset, background, techStack, link}) {
+export default function Card ({title, description, setGoneArray, goneArray, index, needsReset, setNeedsReset, checkForReset, background, techStack, link, textColor}) {
 
 
     const START_MS_DELAY = 300
@@ -60,7 +60,7 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
         }
     }
 
-    const handleSwipeEnd = (swipe, mx, down) => {
+    const handleSwipeEnd = (swipe) => {
 
         if(swipe[0] !==0){
             return (
@@ -148,7 +148,6 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
             }
         }, [needsReset])
         
-        const AnimatedCardTechStack = animated(CardTechStack)
 
         return (
             <animated.div 
@@ -159,7 +158,8 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
             <CardTechStack techStack={techStack} animated={animatedClass}/>
                 <div className={styles.Card_container}
                     style={{backgroundImage:`url(${background})`}}>
-                    <div className={styles.Card_body}>
+                    <div className={styles.Card_body}
+                    style={{color: textColor}}>
                         <h2>{title}</h2>
                         <p>{description}</p>
                         <Link
