@@ -9,7 +9,9 @@ export default function Navbar() {
         <nav className="navbar">
                 <ul>
                 <li>
+                    <Link href="/">
                     SeanDeRue.dev
+                    </Link>
                 </li>
             </ul>
         </nav>

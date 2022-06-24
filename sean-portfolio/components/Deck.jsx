@@ -20,6 +20,7 @@ export default function Deck() {
             description: 'A fun game to play with your buddies',
             background: 'https://via.placeholder.com/500',
             textColor: 'white',
+            link: 'tenzies',
             techStack: [{
                 name: 'React',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -39,6 +40,7 @@ export default function Deck() {
             description: 'Did nothing. Fake Card',
             background: 'undefined',
             textColor: 'black',
+            link: '',
             techStack: [{
                 name: 'React',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -58,6 +60,7 @@ export default function Deck() {
             description: 'A lovely order form for a lovely lass',
             background: '/images/cardBG.jpg',
             textColor: 'white',
+            link: 'katie-order-form',
             techStack: [{
                 name: 'React',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -101,6 +104,7 @@ export default function Deck() {
                 title={card.title}
                 description={card.description}
                 background={card.background}
+                link = {card.link}
                 techStack = {card.techStack}
                 setGoneArray={setGoneArray}
                 goneArray = {goneArray}

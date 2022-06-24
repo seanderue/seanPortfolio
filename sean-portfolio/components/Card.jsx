@@ -6,7 +6,7 @@ import { useGesture } from 'react-use-gesture'
 import { useSpring, animated } from "react-spring"
 import { useEffect, useState } from "react"
 
-export default function Card ({title, description, setGoneArray, goneArray, index, needsReset, setNeedsReset, checkForReset, background, techStack}) {
+export default function Card ({title, description, setGoneArray, goneArray, index, needsReset, setNeedsReset, checkForReset, background, techStack, link}) {
 
 
     const START_MS_DELAY = 300
@@ -164,12 +164,10 @@ export default function Card ({title, description, setGoneArray, goneArray, inde
                         <p>{description}</p>
                         <Link
                             href={{
-                                pathname: '/[project]',
-                                query: { project: 'katie-order-form'}
+                                pathname: `/project/${link}`
                             }}>
                             <a className={styles.Card_link}>
-                                <h3> Explore </h3>
-                                <h3>→</h3>
+                                <h3 className={styles.Card_link_text}> {`Explore`}</h3>
                             </a>
                         </Link>
                     </div>

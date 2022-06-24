@@ -20,7 +20,7 @@ export default function SwipeTip() {
                 👆
             </animated.div>
             <p className={styles.SwipeTip_text}>
-                (Swipe)
+                (Swipe to explore my projects)
             </p>
         </div>
   )

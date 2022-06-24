@@ -78,6 +78,23 @@
     margin-right: 5px;
 }
 
+.Card_link_text::after {
+    content: '→';
+    position: absolute;
+    left: 40%; 
+    transition: all .75s
+    
+}
+
+.Card_link:hover > .Card_link_text::after {
+    left: 42%;
+    transition: all .75s
+}
+
+/* .Card_link_text:hover:after {
+    left: 45%;
+} */
+
 .Card_link > h3 {
     margin: 5px 0 0;
 }
@@ -97,13 +114,13 @@
 
 .SwipeTip_hand {
     width: 100%;
-    font-size: 50px;
-    height: 100px;
+    font-size: 40px;
+    height: 80px;
     /* margin-bottom: 40px; */
 }
 
 .SwipeTip_text {
-    font-size: calc(.1vw + 1rem);
+    font-size: calc(.1vw + .7rem);
     margin-top: 0;
     transform: translateY(-20px);
     color: gray;
