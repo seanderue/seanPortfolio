@@ -1,21 +1,25 @@
 .wrapper {
     margin-left: 3.75rem;
     margin-right: 3.75rem;
-    color: var(--color-text)
+    color: var(--color-text);
+    overflow-x: auto;
 }
 
 .content_container {
     display: grid;
     grid-template-columns: 1.15fr .85fr;
+    grid-template-areas: 'first second';
 }
 
 .left_column {
+    grid-area: first;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
 .right_column {
+    grid-area: second;
     padding: 1rem;
 }
 
@@ -152,4 +156,107 @@
     font-size: 1.312rem;
     margin-top: 0;
     margin-bottom: 1.01rem;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 575px) {
+    .content_container {
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 'first'
+        'second';
+    }
+
+    .TechStack_Icon {
+        margin: 0px;
+        margin-top: 10px;
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .hero_subsection_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero_section_button_container {
+        display: flex;
+        justify-content: flex-end;
+        height: 10vw;
+    }
+
+    .hero_section_button_container > button:first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .hero_section_button_container > button:last-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    
+    .TechStack_icon_label_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        color:#747474;
+    }
+
+
+    .wrapper {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 576px) and (max-width: 767px) {
+    .content_container {
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 'first'
+        'second';
+    }
+
+    .wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .content_container {
+        grid-template-columns: 1fr;
+
+        grid-template-areas: 'first'
+        'second';
+    }
+
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    .content_container {
+        display: grid;
+        grid-template-columns: 1.15fr .85fr;
+    }
+}
+
+@media (min-width: 1281px) {
+    .content_container {
+        display: grid;
+        grid-template-columns: 1.15fr .85fr;
+    }
 }
