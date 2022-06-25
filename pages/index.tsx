@@ -2,10 +2,13 @@ import Card from '../components/Card'
 import Deck from '../components/Deck.jsx'
 import SwipeTip from '../components/SwipeTip'
 import Icons from '../components/Icons'
+import Navbar from '../components/Navbar'
+
 
 export default function EnterPage({}){
     return (
         <main id='canvas'>
+            <Navbar />
             <section className='hero_wrapper'>
                 <div className="hero_text_container">
                     <h1 className='hero_title'>Hello</h1>

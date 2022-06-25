@@ -141,6 +141,7 @@
     color: #747474;
     padding-left: 16px;
     margin: 0;
+    margin-bottom: 3.25rem;
 }
 
 .body_bullet_list li::marker {

@@ -7,11 +7,9 @@ export default function Navbar() {
 
     return (
         <nav className="navbar">
-                <ul>
-                <li>
-                    <Link href="/">
-                    SeanDeRue.dev
-                    </Link>
+            <ul>
+                <li data-text="SEANDERUE.DEV" className="logo">
+                    <Link  href="/"> SEANDERUE.DEV </Link>
                 </li>
             </ul>
         </nav>

@@ -123,6 +123,7 @@
     margin-top: 0;
     transform: translateY(-20px);
     color: gray;
+    margin-bottom: 0;
 }
 
 .CardTechStack_Icon {

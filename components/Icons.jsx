@@ -10,7 +10,7 @@ export default function Icons() {
     }
 
     return (
-    <div>
+    <div className='icon_container'>
         <a href='https://www.linkedin.com/in/sean-derue/'>
             <div className="linkedin-circled"></div>
         </a>
