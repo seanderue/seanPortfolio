@@ -10,6 +10,8 @@
 }
 
 .Cardstack_card_container {
+    display: flex;
+    justify-content: center;
     touch-action: none;
     position: relative;
     width: 300px;
@@ -175,4 +177,53 @@
     background-size: cover!important;
     justify-content: center;
 }
+
+.Card_body {
+    width: 100%;
+    padding: 0 48px 48px;
+    margin: auto 0 0;
+    color:#2a363b;
+}
+
+.Card_body > h2 {
+    font-size: 25px;
+}
+
+.Card_body > p {
+    font-size: 13px;
+}
+
+.Card_link {
+    font-size: .7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.Card_link > h3:first-child {
+    margin-right: 5px;
+}
+
+.Card_link_text::after {
+    content: '→';
+    position: absolute;
+    left: 40%; 
+    transition: all .75s
+    
+}
+
+.Card_link:hover > .Card_link_text::after {
+    left: 42%;
+    transition: all .75s
+}
+
+.Card_link > h3 {
+    margin: 5px 0 0;
+}
+
+.Card_link > h3:last-child {
+    transition: .3s;
+}
+
 }
