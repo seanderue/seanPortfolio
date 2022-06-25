@@ -14,26 +14,46 @@ export default function Deck() {
     const [needsReset, setNeedsReset] = useState(false)
     
     const cards = 
-    [
+    [        
+        // {
+        // title: 'My Story',
+        // description: 'More details about my self-taught journey and other miscellaneous projects',
+        // background: '/images/cardBG-misc.svg',
+        // textColor: '#FFF',
+        // link: 'aboutMe',
+        // techStack: [{
+        //     name: 'React',
+        //     imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+        // },
+        // {
+        //     name: 'Three.js',
+        //     imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg'
+        // },
+        // {
+        //     name: 'Firebase',
+        //     imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
+        // }    
+        // ]
+        // },
         {
             title: 'Slipchenko Lab',
             description: 'Undergraduate research assistant helping to build a GUI for a chemistry visualizing tool',
             background: '/images/cardBG-purdue.jpg',
-            textColor: '#CFB991',
+            textColor: '#ae9b79',
             link: '/iSpiEFP',
             techStack: [{
-                name: 'React',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+                name: 'Java',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg'
             },
             {
-                name: 'Three.js',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg'
+                name: 'CSS',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg'
             },
             {
-                name: 'Firebase',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
+                name: 'GitHub',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg'
             }    
-        ]
+            ]
         },
         {
             title: 'Multiplayer Dice Game',
@@ -74,7 +94,7 @@ export default function Deck() {
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
             }    
         ]
-        }
+        },
     ]
     
     const [goneArray, setGoneArray] = useState(Array(cards.length).fill(false))

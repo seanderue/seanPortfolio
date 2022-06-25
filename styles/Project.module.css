@@ -124,6 +124,20 @@
     align-items: center;
 }
 
+.photo_grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.photo_grid > img {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 .title{
     font-size: 3.18rem;
     margin-bottom: 2.24rem;
@@ -232,6 +246,16 @@
         margin-right: 1rem;
     }
 
+    .photo_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .photo_grid > img {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
 }
   
 /* Media Query for Tablets Ipads portrait mode */
@@ -242,6 +266,16 @@
 
         grid-template-areas: 'first'
         'second';
+    }
+
+    .photo_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    .photo_grid > img {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
 }

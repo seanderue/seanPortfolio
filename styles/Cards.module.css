@@ -1,5 +1,6 @@
 .Cardstack_wrapper {
-    --card-top-position: 35%;
+    /* --card-top-position: 35%; */
+    margin-top: 35%;
     position: relative;
     width: 100%;
     display: flex;
@@ -103,7 +104,8 @@
 }
 
 .SwipeTip_container {
-    top:calc(var(--card-top-position)+200px);
+    /* top:calc(var(--card-top-position)+200px); */
+    margin-top: 20px;
     position: relative;
     display: flex;
     flex-direction: column;
