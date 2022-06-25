@@ -57,7 +57,7 @@ export default function Deck() {
         },
         {
             title: 'Multiplayer Dice Game',
-            description: 'A fun game to play with your buddies',
+            description: 'A WebSocket-based multiplayer dice racing game',
             background: '/images/cardBG-dice.jpg',
             textColor: '#FFF',
             link: 'tenzies',
@@ -77,7 +77,7 @@ export default function Deck() {
         },
         {
             title: 'Bakery Order Form',
-            description: 'A lovely order form for a lovely lass',
+            description: 'A cute order form & auto-emailer for a local baker',
             background: '/images/cardBG-bakery.jpg',
             textColor: '#2a363b',
             link: 'katie-order-form',
