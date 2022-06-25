@@ -159,3 +159,20 @@
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
     /* background-color: aquamarine; */
 }
+
+@media (max-width: 475px) {
+.Card_wrapper {
+    width: 250px;
+    height: 378px;
+}
+
+.Card_container {
+    display: flex;
+    width: 250px;
+    min-width: 250px;
+    /* height: 50%; */
+    border-radius: 16px;
+    background-size: cover!important;
+    justify-content: center;
+}
+}
