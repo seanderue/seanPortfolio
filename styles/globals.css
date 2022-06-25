@@ -462,6 +462,7 @@ input[type="file"] {
   }
 
   .hero_title {
+    margin-left: 15px;
     font-size: 9.2rem;
     line-height: 136px;
   }
