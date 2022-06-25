@@ -27,7 +27,7 @@ export default function katieOrderFormPage() {
         <div className={styles.content_container}>
           <div className={styles.left_column}>
             <div className={styles.hero_section_container}>
-              <video className={styles.hero_section_video} autoPlay muted loop>
+              <video className={styles.hero_section_video} autoPlay controls muted loop>
                 <source src="/videos/bakery1.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
               </video>
