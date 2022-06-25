@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar'
 import Link from 'next/link'
 import Footer from '../../components/Footer'
 
-export default function katieOrderFormPage() {
+export default function iSpiEFP() {
 
   const techStack = [{
     name: 'React',

@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 
+import Footer from '../components/Footer'
 // import { Toaster } from 'react-hot-toast'
 
 function MyApp({ Component, pageProps }) {

@@ -16,11 +16,11 @@ export default function Deck() {
     const cards = 
     [
         {
-            title: 'Multiplayer Dice Game',
-            description: 'A fun game to play with your buddies',
-            background: '/images/cardBG-dice.jpg',
-            textColor: '#FFF',
-            link: 'tenzies',
+            title: 'Slipchenko Lab',
+            description: 'Undergraduate research assistant helping to build a GUI for a chemistry visualizing tool',
+            background: '/images/cardBG-purdue.jpg',
+            textColor: '#CFB991',
+            link: '/iSpiEFP',
             techStack: [{
                 name: 'React',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
@@ -36,24 +36,24 @@ export default function Deck() {
         ]
         },
         {
-            title: 'Slippychenko',
-            description: 'Did nothing. Fake Card',
-            background: 'undefined',
-            textColor: '#2a363b',
-            link: '',
+            title: 'Multiplayer Dice Game',
+            description: 'A fun game to play with your buddies',
+            background: '/images/cardBG-dice.jpg',
+            textColor: '#FFF',
+            link: 'tenzies',
             techStack: [{
                 name: 'React',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
             },
             {
-                name: 'Three.js',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg'
+                name: 'Socket.io',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg'
             },
             {
-                name: 'Firebase',
-                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
+                name: 'Node js',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg'
             }    
-        ]
+            ]
         },
         {
             title: 'Bakery Order Form',

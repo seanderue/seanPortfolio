@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Footer from '../components/Footer'
 
 export default function Custom404() {
     return (
@@ -18,8 +19,9 @@ export default function Custom404() {
           allowFullScreen
         ></iframe>
         <Link href="/">
-          <button className="btn-blue">Go home</button>
+          <button> Go home</button>
         </Link>
+        <Footer />
       </main>
     )
   }
