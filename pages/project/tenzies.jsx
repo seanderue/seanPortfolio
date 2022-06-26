@@ -27,7 +27,7 @@ export default function Tenzies() {
         <div className={styles.content_container}>
           <div className={styles.left_column}>
             <div className={styles.hero_section_container}>
-              <video className={styles.hero_section_video} controls autoPlay muted loop>
+              <video className={styles.hero_section_video} autoPlay controls muted loop>
                 <source src="/videos/tenzies1.mp4" type="video/mp4"/>
                 Your browser does not support the video tag.
               </video>
@@ -46,7 +46,7 @@ export default function Tenzies() {
           </div>
         </div>
           <div className={styles.right_column}>
-            <h1 className={styles.title}>Multiplayer Tenzies</h1>
+            <h1 className={styles.title}>Multi-player Tenzies</h1>
             <p className={styles.body_text}>This was my first-ever significant project. Originally I wanted to make a table-top multiplayer game, but it didn’t take long to realize I had bit off more than I could chew. Instead, I made the back-end additions necessary to this game that I created at the end of a scrimba-react course. I had really pushed myself on this project, so I remember it fondly.</p>
               <h4 className={styles.subtitle}>Goal</h4>
               <p className={styles.body_text}>Learn about websockets and database building to create a real-time dice game that could be played by my friends in-between League of Legends queue timers.</p>

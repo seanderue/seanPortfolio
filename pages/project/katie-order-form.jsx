@@ -51,7 +51,6 @@ export default function katieOrderFormPage() {
           <div className={styles.right_column}>
             <h1 className={styles.title}>Bakery Order Form</h1>
             <p className={styles.body_text}>For years, my girlfriend had been selling baked goods around to the neighbors. Since then, things have started to pick up for her quite a bit through word-of-mouth. She wanted a site that would organize all of her orders and make the customer experience easier.</p>
-            {/* <h4 className={styles.subtitle}>Tech Stack:</h4> */}
               <h4 className={styles.subtitle}>Goal</h4>
               <p className={styles.body_text}>Ultimately, we wanted it to be sharable &amp; easy-to-use. A good portion of her clientele aren’t as tech-savvy, so it was important that the form had an easy-to-follow UX. Rather than just make great sweets, we wanted the whole customer lifecycle to be a treat.</p>
               <h4 className={styles.subtitle}>Project Features</h4>
