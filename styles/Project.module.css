@@ -5,6 +5,16 @@
     overflow-x: auto;
 }
 
+.secondary_photo_container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.secondary_photo_container > img {
+    border-radius: 15px;
+}
+
 .content_container {
     display: grid;
     grid-template-columns: 1.15fr .85fr;

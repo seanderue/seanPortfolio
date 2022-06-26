@@ -43,6 +43,9 @@ export default function katieOrderFormPage() {
                   </Link>
                 </div>
             </div>
+            <div className={styles.secondary_photo_container}>
+              <img src="/images/order-received.jpeg" width={'300px'}></img>
+            </div>
           </div>
         </div>
           <div className={styles.right_column}>
