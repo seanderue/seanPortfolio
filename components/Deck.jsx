@@ -36,6 +36,25 @@ export default function Deck() {
         // ]
         // },
         {
+            title: 'Budgeting App',
+            description: '[WIP] A percent-based budgeting app designed to build a system around your financial goals in minutes',
+            background: '/images/cardBG-budget.jpg',
+            textColor: '#FFF',
+            link: '/WIP2',
+            techStack: [{
+                name: 'React Native',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
+            },
+            {
+                name: 'Typescipt',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
+            },
+            {
+                name: 'AWS',
+                imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg'
+            }      
+            ]
+        },        {
             title: 'Slipchenko Lab',
             description: 'Undergraduate research assistant helping to build a GUI for a chemistry visualizing tool',
             background: '/images/cardBG-purdue.jpg',
