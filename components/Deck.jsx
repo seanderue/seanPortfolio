@@ -40,7 +40,7 @@ export default function Deck() {
             description: '[WIP] A percent-based budgeting app designed to build a system around your financial goals in minutes',
             background: '/images/cardBG-budget.jpg',
             textColor: '#FFF',
-            link: '/WIP2',
+            link: '/budget',
             techStack: [{
                 name: 'React Native',
                 imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
