@@ -68,13 +68,31 @@ export default function Tenzies() {
             </p>
             <h4 className={styles.subtitle}>Project Features</h4>
             <ul className={styles.body_bullet_list}>
-              <li>3D experience using Three.js & React-Three/Fiber</li>
               <li>
                 Webstack's design elements, methodology, and job description
                 expanded upon to illustrate how I'd fit in
               </li>
-              <li>Server-Side-Rendering with Next.js</li>
-              <li>Content hydration from headless CMS using Dato CMS</li>
+              <li>
+                <b>React</b> for extensible components & state management
+              </li>
+              <li>
+                <b>Next</b>.js for static rendering & SEO friendliness
+              </li>
+              <li>
+                <b>DatoCMS</b> for headless content hydration
+              </li>
+              <li>
+                <b>GraphQL</b> for backend communication
+              </li>
+              <li>
+                <b>Vercel</b> for cloud-based hosting
+              </li>
+              <li>
+                <b>React</b>-Three/Fiber for unique 3D experience
+              </li>
+              <li>
+                <b>Sass</b> for CSS management
+              </li>
               <li>Handmade 3D .gltf models</li>
               <li>Easter egg in console.log() 😉</li>
             </ul>
